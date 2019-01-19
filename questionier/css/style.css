@@ -1,0 +1,200 @@
+@charset "utf-8";
+@font-face {
+    font-family:"BebasNeueBold";
+    src: url("../font/BebasNeueBold.ttf");
+}
+@font-face {
+    font-family:"Barlow-Medium";
+    src: url("../font/Barlow-Medium.otf");
+}
+@font-face {
+    font-family:"Brandon-Grotesque-Black";
+    src: url("../font/Brandon-Grotesque-Black.otf");
+}
+
+.inner-container{
+
+	min-height: 100vh;
+	}
+.left-side{
+	background:#273047;
+	padding: 46px 50px;
+	min-height: 100vh;
+}
+.main-heading{
+    font-size: 110px;
+    font-family: "BebasNeueBold";
+    color: #fff;
+    line-height: 100px;
+    padding: 65px 0px 45px;
+    margin: 0;
+}
+.explanation{
+	font-family:"Barlow-Medium";
+	font-size:18px;
+	color:#fff;
+}
+.right-side{
+	padding:30px 100px;
+}
+
+.title {
+    line-height: 65px;
+    text-align: center;
+    font-size: 80px;
+    font-family: "BebasNeueBold";
+    background: linear-gradient(to right, #ff8100, #ff8100, #ff8e00, #ffa400, #ffbc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+::placeholder {
+  color:  #b7b7b7;
+  /*opacity: 1;  Firefox */
+}
+.user {
+    padding: 10px 22px;
+    width: 100%;
+    font-family: "Barlow-Medium";
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 4%;
+    color: #000;
+    outline:#81b746;
+}
+.user:hover{
+	border-color:#81b746;
+
+}
+.input-sections{
+	padding-top: 20px;
+}
+.radio-section {
+	font-family: "Barlow-Medium";
+    font-size: 15px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+        color: #000;
+}
+.first{
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 39%;
+        border-radius: 4px;
+}
+.second{
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 59%;
+    border-radius: 4px;
+}
+.adjust {
+
+	width:100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.adjust p{
+	color:#b7b7b7;
+}
+.start-button {
+    width: 100%;
+    /* height: 65px; */
+    padding: 13px;
+    background-image: linear-gradient(to right, #ff8100, #ff8e00, #ffa400, #ffbc00, #ffc800);
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 7%;
+    font-family: "Brandon-Grotesque-Black";
+}
+label{
+	margin:0;
+	font-weight: 100;
+}
+input[type="radio"]:checked + label {
+  color: #000;
+}
+  
+
+
+  /*************************************************STEP 2******************************************************/
+.header{
+	    background-image: linear-gradient(to right, #1c2333,#262e45 ,#283249);
+	        padding: 10px 0px 20px;
+}
+.logo {
+    width: 25%;
+    padding: 10px 0px 0px;
+}
+.logo img {
+    max-width: 100%;
+    width: 70%;
+    /*padding: 5px;*/
+}
+.extra_header {
+    display: inline-flex;
+    padding-top: 10px;
+    width: 100%;
+}
+.header-text {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Barlow-Medium";
+    padding: 13px 0px;
+    text-align: center;
+    width: 60%;
+}
+.questions{
+	    padding-top: 40px;
+	        padding-bottom: 15px;
+}
+.questions p{
+	  font-size: 20px;
+    font-family: "Barlow-Medium";
+    color:#000;
+}
+.ques{
+    border: none;
+    border-bottom: 2px solid #0000003b;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Barlow-Medium";
+    outline:none;
+}
+.submit-button {
+    width: 40%;
+ 	text-align:center;
+    padding: 13px;
+    background-image: linear-gradient(to right, #ff8100, #ff8e00, #ffa400, #ffbc00, #ffc800);
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 4%;
+    font-family: "Brandon-Grotesque-Black";
+    margin-bottom: 3%;
+}
+.thanks{
+    text-align: center;
+    padding: 140px 50px;
+    width: 50%;
+    margin: auto;
+}
+.thankyou{
+    font-size: 35px;
+    color: #ff4200;
+     font-family: "Brandon-Grotesque-Black";
+    
+}
+.thanks-text{
+	 font-size: 25px;
+    font-family: "Barlow-Medium";
+    color:#000;
+}
