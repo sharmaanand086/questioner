@@ -1,0 +1,159 @@
+@media screen and (max-width:1024px) {
+.logo1 {
+    width: 100%;
+}
+ .logo1 img {
+    width: 10%;
+}   
+    .main-heading {
+    font-size: 85px;
+    line-height: 75px;
+    padding: 35px 0px 45px;
+}
+    .right-side {
+    padding: 30px 50px;
+}
+.adjust {
+    display: block;
+}
+.logo p {
+    font-size: 8px;
+    letter-spacing: 6px;
+}
+}
+
+
+@media screen and (max-width:900px) {
+    .logo1 img {
+    width: 8%;
+}
+.logo1 p {
+    font-size: 8px;
+}
+.explanation {
+    font-size: 16px;
+}
+    .thanks {
+    width: 90%;
+}
+  .logo {
+    width: 30%;
+    padding: 10px 0px 0px;
+}
+.logo img {
+    max-width: 100%;
+    width: 15%;
+}
+    .header-text {
+    font-size: 18px;
+    width: 70%;
+}
+}
+@media screen and (max-width:768px) {
+.title {
+    font-size: 70px;
+}
+.user {
+    padding: 10px 15px;
+}
+    .first {
+    width: 43%;
+}
+.second {
+    width: 53%;
+}
+.right-side {
+    padding: 10px 40px;
+}
+.main-heading {
+    font-size: 78px;
+    line-height: 65px;
+    padding: 35px 0px 30px;
+}
+.extra_header {
+    display: block;
+    width: 100%;
+}
+.logo {
+    text-align: center;
+    width: 100%;
+}
+.logo img {
+    width: 4%;
+}
+.header-text {
+    font-size: 20px;
+    padding: 13px 0px 0px;
+    margin: 0px;
+    width: 100%;
+}
+}
+@media screen and (max-width:660px) {
+.inner-container {
+   display:block;
+    min-height: 0vh;
+}
+.left-side {
+    padding: 10px 50px 30px;
+    min-height: 0vh;
+}
+.img-div {
+    width: 100%;
+}
+ .logo1 {
+    text-align: center;
+}   
+ .start-button {
+     margin-bottom: 2%;
+}
+}
+@media screen and (max-width:640px) {
+    .extra_header {
+    display: block;
+}
+.logo {
+    width: 100%;
+    text-align: center;
+        padding: 0px;
+}
+.logo img {
+    width: 6%;
+}
+.header-text {
+     font-size: 20px;
+    padding: 20px 0px 0px;
+    width: 100%;
+}
+}
+@media screen and (max-width:550px) {
+    .questions p {
+    font-size: 18px;}
+    .submit-button{
+        margin-left:30%;
+    }
+    .thanks {
+    padding: 120px 10px;
+}
+    .thanks-text {
+    font-size: 20px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .left-side {
+    padding: 10px 25px 30px;
+    }
+    .main-heading {
+    font-size: 70px;
+    line-height: 65px;
+    padding: 20px 0px 10px;
+}
+    .explanation {
+    font-size: 12px;
+}
+}
+@media screen and (max-width:360px) {
+    .title {
+    font-size: 65px;
+}
+}
