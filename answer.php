@@ -49,7 +49,7 @@ $con = mysqli_connect("localhost","roo","","ctf_questionnaire");
         <div class="container">
              <form method="post" action="insertquestion.php">
              <input type="hidden" id="id" value="<?php echo $ID ?>" name="id">
-        <?php $con = mysqli_connect("localhost","world_hello","Mumbai@123","ctf_questionnaire");
+        <?php 
                    $check ="SELECT * FROM `questions`";
                    $rs = mysqli_query($con,$check);
                    $a=1;
@@ -57,7 +57,10 @@ $con = mysqli_connect("localhost","roo","","ctf_questionnaire");
                    while($row= mysqli_fetch_assoc($rs)){
                        $questionid = $row["id"];
                     $answer = "SELECT * FROM `answers` WHERE userid='$ID' AND qid = '$questionid'";
-                    $rs1 = mysqli_query($con,$answer);
+                     $rs1 = mysqli_query($con,$answer);
+                      $row_cnt = mysqli_num_rows($rs1);
+                    //var_dump($row_cnt);
+                    if($row_cnt > 0){
                     while($row1 = mysqli_fetch_assoc($rs1)){
                     
                    ?>
@@ -68,9 +71,22 @@ $con = mysqli_connect("localhost","roo","","ctf_questionnaire");
                 </p>
                 <!--<input class="ques" id="" name="" placeholder="Start writing answer....">-->
             </div>
-             <?php
-                    }
-             }?>
+             <?php    }}
+                      else{
+                          ?>
+                          <div class="questions">
+               
+                     <p><span> <?php echo $a++ ?>. </span><?php echo $row["question"]; ?>
+                     <input required class="ques" id="" type="text" name="answers[]" value="<?php echo $row1["answers"]; ?>" placeholder="Start writing answer....">
+                    </p>
+                    <!--<input class="ques" id="" name="" placeholder="Start writing answer....">-->
+                    </div>
+                          <?php
+                      
+                         
+                    } 
+                 }
+             ?>
              <input type="submit" class="submit-button"  name="submit" value="SUBMIT">
             </form>
             <!--<div class="submit-button">SUBMIT</div>-->
